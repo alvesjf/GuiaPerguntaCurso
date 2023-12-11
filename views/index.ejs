@@ -1,0 +1,16 @@
+<%- include('./partials/header.ejs') %>
+<body>
+    <%- include('./partials/navbar.ejs') %>
+    <div class="container">
+
+        <% perguntas.forEach(pergunta => { %>        
+               
+            <p><%= pergunta.titulo %></p>
+            
+        <% }) %>
+
+    </div>
+
+</body>
+<%- include('./partials/footer.ejs') %>
+
