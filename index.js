@@ -29,8 +29,8 @@ app.use(bodyParser.json());
 app.get("/",(req,res) => {   
     //EQUIVALENTE AO SELECT * ALL FROM PERGUNTAS
     Pergunta.findAll({ raw: true, order: [
-        ['id','DESC'
-    ]).then(perguntas => {
+        ['id','DESC']
+    ]}).then(perguntas => {
         res.render("index",{   
             perguntas: perguntas
         });        
