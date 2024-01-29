@@ -64,7 +64,7 @@ app.get("/pergunta/:id",(req,res) => {
             Resposta.findAll({
                 where: {perguntaId: pergunta.id}
             }).then(respostas =>{                
-                res.render('pergunta' ,{
+                res.render("pergunta" ,{
                     pergunta: pergunta,
                     respostas: respostas
                 }); 
