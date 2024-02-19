@@ -18,7 +18,12 @@
         <h3>RESPOSTAS</h3>
         <hr>
         <% respostas.forEach(resposta => {%>
-            <%= resposta.corpo %>
+            <br>
+            <div class="card">
+                <div class="card-body">
+                    <%= resposta.corpo %><br>
+                </div>
+            </div>
         <% }) %> 
     </div>
 </body>
